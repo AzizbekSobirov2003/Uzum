@@ -1,0 +1,138 @@
+section{
+    padding: 50px 0;
+}
+.cards{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px 16px;
+}
+.card{
+    cursor: pointer;
+    border: none;
+    width: 235px;
+    height: 470px;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+.card:hover{
+    box-shadow: 0 15px 15px -10px #93939333;
+}
+.card img{
+    width: 100%;
+    transition: 0.3s;
+}
+.card_top{
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_top-like{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.card_top-like ion-icon{
+    font-size: 24px;
+}
+.card_top-like input{
+    display: none;
+}
+.card_top-like label{
+    display: flex;
+    align-items: center;
+}
+.item_checkbox2{
+    display: none;
+    color: #7000FF;
+}
+.card_top-like input:checked ~ label .item_checkbox2{
+    display: block;
+}
+.card_top-like input:checked ~ label .item_checkbox{
+    display: none;
+}
+.card img:hover{
+    width: 104%;
+}
+.card_top > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_bottom{
+    padding: 8px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+.card_bottom p{
+    font-size: 13px;
+    height: 38px;
+    overflow: hidden;
+}
+.card_bottom span{
+    cursor: pointer;
+}
+.sharsh{
+    font-size: 10px;
+    color: grey;
+    display: flex;
+    align-items: center;
+}
+.sharsh ion-icon{
+    color: orange;
+}
+.card_bottom-kr{
+    padding: 4px;
+    border-radius: 4px;
+    background-color: #FFFF00;
+    font-size: 12px;
+}
+.card_bottom_price{
+    width: 100%;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.add_cart{
+    width: 28px;
+    height: 28px;
+    padding: 4px;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+.add_cart:hover{
+    background-color: #b6b6b69e;
+    transition: 0.2s;
+}
+.add_cart ion-icon{
+    width: 100%;
+    height: 100%;
+    color: rgb(25, 25, 25);
+}
+.narxlar{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 4px;
+}
+.narxlar span{
+    text-decoration: line-through;
+    font-size: 11px;
+    color: grey;
+}
+
